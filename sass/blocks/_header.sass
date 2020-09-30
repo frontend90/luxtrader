@@ -1,0 +1,115 @@
+.header
+  background: url(../img/header/bg.png) no-repeat 
+  background-size: cover 
+  background-position: center
+  height: 100vh 
+  & .top-header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background: #1c242a
+    padding: 20px 0 
+    z-index: 10
+    & .top-header-wrap 
+      display: flex 
+      align-items: center
+      justify-content: space-between
+      & .burger 
+        display: none 
+      & .menu 
+        & .main-menu 
+          & a 
+            text-transform: uppercase
+            color: #ffffff
+            +pf_reg 
+            font-size: 14px 
+            letter-spacing: 1.4px 
+            margin-left: 20px
+            display: inline-block
+            position: relative
+            &:before
+              content: ''
+              position: absolute
+              left: 0
+              bottom: -2px
+              width: 0
+              height: 1px 
+              background: #ffffff
+              transition: .3s linear 
+            &:hover::before 
+              width: 50%
+            &:first-of-type
+              margin-left: 0 
+      & .user-block 
+        display: flex 
+        align-items: center
+        & .region
+          background: url(../img/header/globe.png) no-repeat left 
+          & button 
+            text-transform: uppercase
+            color: #ffffff
+            font-size: 14px 
+            +pf_reg 
+            letter-spacing: 1.4px 
+            margin-left: 30px 
+        & .user
+          background: url(../img/header/user.png) no-repeat left
+          display: inline-flex
+          align-items: center
+          height: 18px 
+          margin-left: 25px 
+          & button 
+            margin-left: 30px 
+            & .fas 
+              +solid
+              display: block
+              color: #bb9c66
+              font-size: 8px  
+  & .header-main
+    display: flex 
+    flex-direction: column 
+    align-items: center
+    justify-content: center
+    height: 100%
+    text-align: center
+    & h3
+      color: #bb9c66
+      font-size: 40px 
+      +cerem 
+    & h4 
+      margin-top: 15px 
+      font-size: 35px 
+      color: #ffffff
+      +pf_reg 
+      letter-spacing: 5.25px 
+    & p 
+      margin-top: 15px 
+      color: #ffffff
+      line-height: 25px 
+    & .btn 
+      margin-top: 50px 
+      & button 
+        text-transform: uppercase
+        width: 250px
+        height: 50px
+        border: 3px solid #bb9c66
+        color: #ffffff
+        +idea 
+        letter-spacing: 1.5px 
+        position: relative
+        overflow: hidden
+        z-index: 1
+        &:hover::before 
+          transform: translateX(0)
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background: #bb9c66
+          transition: .3s linear 
+          transform: translateX(-100%)
+          z-index: -1

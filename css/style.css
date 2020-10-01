@@ -167,17 +167,65 @@ body {
           align-items: center;
   height: 18px;
   margin-left: 25px;
+  cursor: pointer;
+  position: relative;
 }
 
-.header .top-header .top-header-wrap .user-block .user button {
+.header .top-header .top-header-wrap .user-block .user .user-nav {
   margin-left: 30px;
 }
 
-.header .top-header .top-header-wrap .user-block .user button .fas {
+.header .top-header .top-header-wrap .user-block .user .user-nav .fas {
   font-family: 'fa-solid-900';
   display: block;
   color: #bb9c66;
   font-size: 8px;
+}
+
+.header .top-header .top-header-wrap .user-block .user .user-list {
+  position: absolute;
+  background: #1c242a;
+  padding: 10px 25px;
+  right: 0;
+  top: 50px;
+  cursor: default;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.header .top-header .top-header-wrap .user-block .user .user-list.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header .top-header .top-header-wrap .user-block .user .user-list .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .top-header .top-header-wrap .user-block .user .user-list .link img {
+  width: 15px;
+  height: 100%;
+}
+
+.header .top-header .top-header-wrap .user-block .user .user-list .link a {
+  display: inline-block;
+  white-space: nowrap;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 25px;
+}
+
+.header .top-header .top-header-wrap .user-block .user .user-list .link a:hover {
+  text-decoration: underline;
 }
 
 .header .header-main {

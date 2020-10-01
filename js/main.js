@@ -1,16 +1,16 @@
 /************    burger  (открыть, закрыть)    *************/
-let user_icon = document.querySelector('.burger');
-user_icon.addEventListener("click", function (e) {
-  let user_menu = document.querySelector('.menu');
-  user_menu.classList.toggle('show');
-  user_icon.classList.toggle('active');
+let burger = document.querySelector('.burger');
+burger.addEventListener("click", function (e) {
+  let burger_menu = document.querySelector('.menu');
+  burger_menu.classList.toggle('show');
+  burger.classList.toggle('active');
 });
 
 document.documentElement.addEventListener("click", function (e) {
   if (!e.target.closest('.burger')) {
-    let user_menu = document.querySelector('.menu');
-    user_menu.classList.remove('show');
-    user_icon.classList.remove('active');
+    let burger_menu = document.querySelector('.menu');
+    burger_menu.classList.remove('show');
+    burger.classList.remove('active');
   }
 
   $('.main-menu a').click(function () {
@@ -45,3 +45,17 @@ function adaptive_function() {
   adaptive_header(w, h);
 }
 adaptive_function();
+
+/************    user  (открыть, закрыть)    *************/
+let user_icon = document.querySelector('.user');
+user_icon.addEventListener("click", function (e) {
+  let user_menu = document.querySelector('.user-list');
+  user_menu.classList.toggle('show');
+});
+
+document.documentElement.addEventListener("click", function (e) {
+  if (!e.target.closest('.user')) {
+    let user_menu = document.querySelector('.user-list');
+    user_menu.classList.remove('show');
+  }
+});

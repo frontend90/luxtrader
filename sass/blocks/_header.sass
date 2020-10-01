@@ -59,13 +59,45 @@
           align-items: center
           height: 18px 
           margin-left: 25px 
-          & button 
+          cursor: pointer
+          position: relative
+          & .user-nav 
             margin-left: 30px 
             & .fas 
               +solid
               display: block
               color: #bb9c66
               font-size: 8px  
+          & .user-list
+            position: absolute
+            background: #1c242a
+            padding: 10px 25px 
+            right: 0
+            top: 50px
+            cursor: default
+            z-index: 10
+            opacity: 0
+            visibility: hidden
+            transition: .3s linear 
+            &.show 
+              opacity: 1
+              visibility: visible
+            & .link
+              display: flex 
+              align-items: center
+              height: 
+              & img 
+                width: 15px
+                height: 100%
+              & a 
+                display: inline-block
+                white-space: nowrap
+                margin-left: 10px 
+                font-size: 14px 
+                color: #ffffff
+                line-height: 25px
+                &:hover
+                  text-decoration: underline
   & .header-main
     display: flex 
     flex-direction: column 

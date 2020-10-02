@@ -1,0 +1,85 @@
+.services
+  background: #1c242a
+  padding: 60px 0 100px 0 
+  & .title
+    text-align: center
+    & h3 
+      color: #bb9c66
+      +cerem 
+      font-size: 40px 
+    & h4
+      margin-top: 25px  
+      color: #ffffff
+      text-transform: uppercase
+      +pf_med 
+      font-size: 35px 
+      letter-spacing: 5.25px 
+  & .services-bg
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    margin-top: 20px 
+    & .left 
+      background: url(../img/services/1.png) left no-repeat 
+      width: 401px 
+      height: 25px 
+      margin-top: -22px
+    & .middle 
+      background: url(../img/services/clock.png) center no-repeat 
+      min-width: 72px 
+      height: 74px 
+    & .right
+      background: url(../img/services/2.png) right no-repeat 
+      width: 398px 
+      height: 25px 
+      margin-top: -22px 
+  & .services-wrap
+    margin-top: 50px 
+    display: flex 
+    justify-content: space-between
+    & .block 
+      text-align: center
+      width: calc(25% - 30px)
+      & .block-title
+        margin-top: 40px 
+        & h5 
+          color: #ffffff
+          text-transform: uppercase
+          font-size: 21px 
+          +pf_med 
+          letter-spacing: 2.1px 
+        & p 
+          margin-top: 25px 
+          line-height: 25px 
+          color: #bb9c66
+        & a 
+          display: inline-block
+          margin-top: 30px 
+          +pf_med
+          font-size: 21px 
+          text-transform: uppercase
+          color: #ffffff
+          letter-spacing: 2.1px 
+          position: relative 
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: -50%
+            width: 50px
+            height: 1px 
+            background: #bb9c66
+            cursor: default
+          &::after 
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: -50%
+            width: 50px
+            height: 1px 
+            background: #bb9c66
+            cursor: default
+
+

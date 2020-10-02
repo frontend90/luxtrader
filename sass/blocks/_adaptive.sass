@@ -8,6 +8,30 @@
             width: 18px 
             & button 
               display: none 
+  .auction
+    & .lots
+      & .lots-offers
+        flex-direction: column 
+        margin-top: 0
+        & .block 
+          margin: 40px auto 0
+    & .all-lots
+      & .all-lots-gallery
+        flex-direction: column 
+        & .left 
+          &::before
+            display: none 
+        & .right 
+          &::before
+            display: none 
+        & .block 
+          margin: 50px auto 0 
+          &:first-of-type
+            margin-top: 0
+          & .box 
+            &:last-of-type
+              &::before
+                display: block 
 @media screen and ( max-width: 750px )
   .header 
     & .top-header
@@ -83,6 +107,20 @@
                 margin-left: 30px 
           &.show 
             display: block 
+@media screen and ( max-width: 700px )
+  .auction 
+    & .all-lots
+      & .all-lots-desc
+        & .all-lots-bg
+          display: none 
+        & .all-lots-text
+          margin-left: 0
+@media screen and ( max-width: 400px )
+  .auction
+    & .lots
+      & .lots-title 
+        & h4 
+          font-size: 25px 
 @media screen and ( max-width: 350px )
   .header 
     & .header-main 

@@ -1,0 +1,333 @@
+.auction
+  position: relative
+  & .auction-bg1
+      background: url(../img/auction/bg.png) top no-repeat 
+      display: inline-block 
+      height: 26px 
+      width: 77px 
+      position: absolute
+      top: calc(-26px / 2)
+      left: 50%
+      transform: translateX(-50%)
+  & .lots 
+    & .lots-title
+      text-align: center
+      padding-top: 85px 
+      & h3 
+        +cerem 
+        font-size: 40px 
+        color: #bb9c66
+      & h4
+        margin-top: 20px 
+        text-transform: uppercase
+        +pf_med 
+        color: #1c242a
+        font-size: 35px 
+        letter-spacing: 5.25px 
+    & .auction-bg2
+      display: flex 
+      align-items: center
+      justify-content: space-between
+      margin-top: 20px 
+      width: 100%
+      & .left 
+        margin-top: -20px
+        background: url(../img/auction/4.png) left no-repeat 
+        width: 401px
+        height: 25px
+      & .middle 
+        background: url(../img/auction/5.png) center no-repeat 
+        min-width: 72px
+        height: 74px
+      & .right 
+        margin-top: -20px
+        background: url(../img/auction/6.png) right no-repeat 
+        width: 401px
+        height: 25px 
+    & .lots-offers
+      display: flex 
+      justify-content: space-between
+      margin-top: 40px 
+      & .block 
+        max-width: 250px
+        & .img 
+          position: relative
+          & .overlay 
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            bottom: 0
+            width: 0
+            height: 0
+            border-left: 50px solid transparent
+            border-right: 50px solid transparent
+            border-bottom: 50px solid #ffffff
+            display: flex 
+            flex-direction: column 
+            align-items: center
+            justify-content: flex-start
+            & img 
+              margin-top: 15px
+            & span 
+              display: inline-block
+              margin-top: 5px
+              +pt_narr
+              color: #000000
+              font-size: 18px 
+              line-height: 21px 
+        & .block-title
+          margin-top: 30px 
+          & h4 
+            +pf_med 
+            color: #000000
+            font-size: 21px 
+            text-align: center
+            text-transform: uppercase
+            & span 
+              opacity: 0
+          & .block-rate
+            margin-top: 30px
+            display: flex 
+            justify-content: space-between
+            & .block-views
+              display: flex 
+              flex-direction: column 
+              align-items: center
+              position: relative
+              height: 100%
+              &::before
+                content: ''
+                position: absolute
+                width: 50px
+                height: 1px 
+                background: #bb9c66
+                left: 50%
+                transform: translateX(-50%)
+                bottom: 0
+              & span 
+                display: inline-block
+                margin-top: 5px 
+                font-size: 14px 
+                color: #000000
+            & .block-now 
+              margin-top: 5px 
+              text-align: center
+              background: url(../img/auction/7.png) center no-repeat
+              padding: 1px 0 
+              & h6 
+                font-size: 14px 
+                color: #000000
+              & h4 
+                margin-top: 10px 
+                +bravo 
+                color: #1c242a
+                font-size: 50px
+              & .fas 
+                +solid 
+                font-size: 14px 
+                color: #1c242a 
+            & .block-rates
+              display: flex 
+              flex-direction: column 
+              align-items: center
+              position: relative
+              height: 100%
+              &::before
+                content: ''
+                position: absolute
+                width: 50px
+                height: 1px 
+                background: #bb9c66
+                left: 50%
+                transform: translateX(-50%)
+                bottom: 0
+              & span 
+                display: inline-block
+                margin-top: 5px 
+                font-size: 14px 
+                color: #000000 
+          & .btn 
+            text-align: center
+            margin-top: 25px 
+            & button 
+              text-transform: uppercase
+              width: 200px 
+              height: 50px 
+              border: 3px solid #bb9c66
+              +pf_med 
+              color: #000000
+              font-size: 21px 
+              position: relative
+              overflow: hidden
+              z-index: 1
+              &::before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background: #bb9c66
+                transform: translateX(-100%)
+                transition: .3s linear 
+                z-index: -1
+              &:hover::before 
+                transform: translateX(0)
+  & .all-lots
+    padding: 100px 0 75px 0 
+    & .title 
+      display: flex 
+      align-items: center
+      justify-content: center
+      & .left 
+        background: url(../img/auction/8.png) left no-repeat 
+        height: 35px 
+        width: 108px 
+      & .middle 
+        width: 100px 
+        margin-left: 40px 
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          background: url(../img/auction/10.png) left no-repeat 
+          width: 9px 
+          height: 9px 
+          left: -35px
+          top: 50%
+          transform: translateY(-50%)
+          display: inline-block
+        &::after
+          content: ''
+          position: absolute
+          background: url(../img/auction/10.png) right no-repeat 
+          width: 9px 
+          height: 9px 
+          right: -35px
+          top: 50%
+          transform: translateY(-50%)
+          display: inline-block
+        & h5 
+          text-transform: uppercase
+          white-space: nowrap
+          +pf_med 
+          color: #000000
+          font-size: 21px 
+          position: relative
+          text-align: center
+          &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            width: 100px 
+            height: 100px 
+            border-radius: 50%
+            border: 3px solid #bb9c66
+      & .right 
+        background: url(../img/auction/9.png) right no-repeat 
+        width: 109px 
+        height: 35px 
+        margin-left: 40px  
+    & .all-lots-gallery
+      margin-top: 100px 
+      display: flex 
+      justify-content: space-between
+      & .left 
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          right: -50%
+          width: 100%
+          height: 100%
+          background: url(../img/auction/gallery/bg2.png) right no-repeat 
+      & .right 
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          left: -50%
+          width: 100%
+          height: 100%
+          background: url(../img/auction/gallery/bg2.png) left no-repeat 
+      & .block
+        position: relative
+        & .box 
+          position: relative 
+          margin-top: 50px 
+          z-index: 5
+          max-width: 250px
+          &::before
+            content: ''
+            position: absolute
+            bottom: -30px
+            left: 50%
+            transform: translateX(-50%)
+            background: #bb9c66
+            border-radius: 50%
+            width: 10px 
+            height: 10px 
+          &:first-of-type
+            margin-top: 0
+          &:last-of-type
+            &::before
+              display: none 
+          & .overlay 
+            position: absolute
+            top: 0
+            left: 0
+            text-align: center
+            background: rgba(#1c242a,.8)
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            & img 
+              margin-top: 25px 
+            & p 
+              margin-top: 20px 
+              color: #ffffff
+              text-transform: uppercase
+              +pf_med 
+              font-size: 21px 
+              letter-spacing: 2.1px  
+            & span 
+              display: inline-block
+              background: url(../img/auction/gallery/bg.png) no-repeat 
+              width: 100px 
+              height: 22px 
+              position: absolute
+              left: 50%
+              transform: translateX(-50%)
+              bottom: 40px 
+            & a 
+              position: absolute
+              width: 100%
+              height: 100%
+              top: 0
+              left: 0
+    & .all-lots-desc
+      margin-top: 85px 
+      display: flex 
+      justify-content: space-between
+      align-items: center
+      & .all-lots-bg
+        background: url(../img/auction/gallery/bg3.png) left no-repeat 
+        min-width: 85px 
+        height: 375px 
+      & .all-lots-text
+        margin-left: 45px 
+        & p 
+          line-height: 25px 
+          margin-top: 25px 
+          &:first-of-type
+            margin-top: 0
+
+
+
+
+          
+
+
+      

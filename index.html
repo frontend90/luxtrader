@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header class="header">
+<body onload="time()">
+  <header class="header" id="home">
     <div class="top-header">
       <div class="container">
         <div class="top-header-wrap">
@@ -108,6 +108,303 @@
   <!-- /.header -->
 
   <main>
+    <section class="auction" id="auction">
+      <span class="auction-bg1"></span>
+      <div class="container">
+        <div class="lots">
+          <div class="lots-title">
+            <h3>Популярные</h3>
+            <h4>лоты под аукцион</h4>
+          </div>
+          <!-- /.lots-title -->
+          <div class="auction-bg2">
+            <div class="block left">
+            </div>
+            <!-- /.block -->
+            <div class="block middle">
+            </div>
+            <!-- /.block -->
+            <div class="block right">
+            </div>
+            <!-- /.block -->
+          </div>
+          <!-- /.auction-bg2 -->
+          <div class="lots-offers">
+            <div class="block">
+              <div class="img">
+                <img src="img/auction/1.png" alt="">
+                <div class="overlay">
+                  <img src="img/auction/clock.png" alt="">
+                  <span id="time1"></span>
+                </div>
+                <!-- /.overlay -->
+              </div>
+              <!-- /.img -->
+              <div class="block-title">
+                <h4>Arnold & Son Worldtimer discovery of antarctica</h4>
+                <div class="block-rate">
+                  <div class="block block-views">
+                    <img src="img/auction/eye.png" alt="">
+                    <span>1 098</span>
+                  </div>
+                  <!-- /.block -->
+                  <div class="block block-now">
+                    <h6>Текущая ставка</h6>
+                    <h4>18 999 203</h4>
+                    <i class="fas fa-ruble-sign"></i>
+                  </div>
+                  <!-- /.block -->
+                  <div class="block block-rates">
+                    <img src="img/auction/palm.png" alt="">
+                    <span>75</span>
+                  </div>
+                  <!-- /.block -->
+                </div>
+                <!-- /.block-rate -->
+                <div class="btn">
+                  <button>поднять ставку</button>
+                </div>
+                <!-- /.btn -->
+              </div>
+              <!-- /.block-title -->
+            </div>
+            <!-- /.block -->
+            <div class="block">
+              <div class="img">
+                <img src="img/auction/2.png" alt="">
+                <div class="overlay">
+                  <img src="img/auction/clock.png" alt="">
+                  <span id="time2"></span>
+                </div>
+                <!-- /.overlay -->
+              </div>
+              <!-- /.img -->
+              <div class="block-title">
+                <h4>Chateau Lafite 1949<br>
+                  <span>f</span>
+                </h4>
+                <div class="block-rate">
+                  <div class="block block-views">
+                    <img src="img/auction/eye.png" alt="">
+                    <span>756</span>
+                  </div>
+                  <!-- /.block -->
+                  <div class="block block-now">
+                    <h6>Текущая ставка</h6>
+                    <h4>245 050</h4>
+                    <i class="fas fa-ruble-sign"></i>
+                  </div>
+                  <!-- /.block -->
+                  <div class="block block-rates">
+                    <img src="img/auction/palm.png" alt="">
+                    <span>3</span>
+                  </div>
+                  <!-- /.block -->
+                </div>
+                <!-- /.block-rate -->
+                <div class="btn">
+                  <button>поднять ставку</button>
+                </div>
+                <!-- /.btn -->
+              </div>
+              <!-- /.block-title -->
+            </div>
+            <!-- /.block -->
+            <div class="block">
+              <div class="img">
+                <img src="img/auction/3.png" alt="">
+                <div class="overlay">
+                  <img src="img/auction/clock.png" alt="">
+                  <span id="time3"></span>
+                </div>
+                <!-- /.overlay -->
+              </div>
+              <!-- /.img -->
+              <div class="block-title">
+                <h4>Rolex Paul Newman
+                  Daytona</h4>
+                <div class="block-rate">
+                  <div class="block block-views">
+                    <img src="img/auction/eye.png" alt="">
+                    <span>11</span>
+                  </div>
+                  <!-- /.block -->
+                  <div class="block block-now">
+                    <h6>Текущая ставка</h6>
+                    <h4>3 245 000</h4>
+                    <i class="fas fa-ruble-sign"></i>
+                  </div>
+                  <!-- /.block -->
+                  <div class="block block-rates">
+                    <img src="img/auction/palm.png" alt="">
+                    <span>3</span>
+                  </div>
+                  <!-- /.block -->
+                </div>
+                <!-- /.block-rate -->
+                <div class="btn">
+                  <button>поднять ставку</button>
+                </div>
+                <!-- /.btn -->
+              </div>
+              <!-- /.block-title -->
+            </div>
+            <!-- /.block -->
+          </div>
+          <!-- /.lots-offers -->
+        </div>
+        <!-- /.lots -->
+        <div class="all-lots">
+          <div class="title">
+            <div class="block left"></div>
+            <!-- /.block -->
+            <div class="block middle">
+              <h5>все лоты</h5>
+            </div>
+            <!-- /.block -->
+            <div class="block right"></div>
+            <!-- /.block -->
+          </div>
+          <!-- /.title -->
+          <div class="all-lots-gallery">
+            <div class="block left">
+              <div class="box">
+                <img src="img/auction/gallery/1.png" alt="">
+                <div class="overlay">
+                  <img src="img/auction/gallery/11.png" alt="">
+                  <p>часы</p>
+                  <span></span>
+                  <a href="javascript:;"></a>
+                </div>
+                <!-- /.overlay -->
+              </div>
+              <!-- /.box -->
+              <div class="box">
+                <img src="img/auction/gallery/4.png" alt="">
+                <div class="overlay">
+                  <img src="img/auction/gallery/44.png" alt="">
+                  <p>аксуссуары</p>
+                  <span></span>
+                  <a href="javascript:;"></a>
+                </div>
+                <!-- /.overlay -->
+              </div>
+              <!-- /.box -->
+              <div class="box">
+                <img src="img/auction/gallery/7.png" alt="">
+                <div class="overlay">
+                  <img src="img/auction/gallery/77.png" alt="">
+                  <p>одежда и обувь</p>
+                  <span></span>
+                  <a href="javascript:;"></a>
+                </div>
+                <!-- /.overlay -->
+              </div>
+              <!-- /.box -->
+            </div>
+            <!-- /.block -->
+            <div class="block middle">
+              <div class="box">
+                <img src="img/auction/gallery/2.png" alt="">
+                <div class="overlay">
+                  <img src="img/auction/gallery/22.png" alt="">
+                  <p>ювелирные<br>изделия</p>
+                  <span></span>
+                  <a href="javascript:;"></a>
+                </div>
+                <!-- /.overlay -->
+              </div>
+              <!-- /.box -->
+              <div class="box">
+                <img src="img/auction/gallery/5.png" alt="">
+                <div class="overlay">
+                  <img src="img/auction/gallery/55.png" alt="">
+                  <p>недвижимость</p>
+                  <span></span>
+                  <a href="javascript:;"></a>
+                </div>
+                <!-- /.overlay -->
+              </div>
+              <!-- /.box -->
+              <div class="box">
+                <img src="img/auction/gallery/8.png" alt="">
+                <div class="overlay">
+                  <img src="img/auction/gallery/88.png" alt="">
+                  <p>предметы<br>искусства</p>
+                  <span></span>
+                  <a href="javascript:;"></a>
+                </div>
+                <!-- /.overlay -->
+              </div>
+              <!-- /.box -->
+            </div>
+            <!-- /.block -->
+            <div class="block right">
+              <div class="box">
+                <img src="img/auction/gallery/3.png" alt="">
+                <div class="overlay">
+                  <img src="img/auction/gallery/33.png" alt="">
+                  <p>автотранспорт и<br>лодки</p>
+                  <span></span>
+                  <a href="javascript:;"></a>
+                </div>
+                <!-- /.overlay -->
+              </div>
+              <!-- /.box -->
+              <div class="box">
+                <img src="img/auction/gallery/6.png" alt="">
+                <div class="overlay">
+                  <img src="img/auction/gallery/66.png" alt="">
+                  <p>hi-tech</p>
+                  <span></span>
+                  <a href="javascript:;"></a>
+                </div>
+                <!-- /.overlay -->
+              </div>
+              <!-- /.box -->
+              <div class="box">
+                <img src="img/auction/gallery/9.png" alt="">
+                <div class="overlay">
+                  <img src="img/auction/gallery/99.png" alt="">
+                  <p>алкоголь и еда</p>
+                  <span></span>
+                  <a href="javascript:;"></a>
+                </div>
+                <!-- /.overlay -->
+              </div>
+              <!-- /.box -->
+            </div>
+            <!-- /.block -->
+          </div>
+          <!-- /.all-lots-gallery -->
+          <div class="all-lots-desc">
+            <div class="all-lots-bg"></div>
+            <!-- /.all-lots-bg -->
+            <div class="all-lots-text">
+              <p>Мы рады приветствовать вас на уникальной Лакшери аукционе, здесь вы сможете найти достойные для себя
+                лоты. Аукцион по продаже недвижимости во многих развитых странах являюется основным инструментом
+                купли-продажи коммерческой, жилой, и муниципальной недвижимости, в том числе квартир. Общий объем сделок
+                в
+                мире на аукционах по продаже недвижимости варьируется от 30% до 80%. Для России аукцион недвижимости
+                является относительно новым и обретает все большую популярность.</p>
+              <p>Мы рады приветствовать вас на уникальной Лакшери аукционе, здесь вы сможете найти достойные для себя
+                лоты. Аукцион по продаже недвижимости во многих развитых странах являюется основным инструментом
+                купли-продажи коммерческой, жилой, и муниципальной недвижимости, в том числе квартир. Общий объем сделок
+                в
+                мире на аукционах по продаже недвижимости варьируется от 30% до 80%. Для России аукцион недвижимости
+                является относительно новым и обретает все большую популярность.</p>
+              <p>Муниципальной недвижимости, в том числе квартир. Общий объем сделок в мире на аукционах по продаже
+                недвижимости варьируется от 30% до 80%.</p>
+            </div>
+            <!-- /.all-lots-text -->
+          </div>
+          <!-- /.all-lots-desc -->
+        </div>
+        <!-- /.all-lots -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.auction -->
   </main>
 
 

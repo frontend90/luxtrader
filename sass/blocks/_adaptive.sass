@@ -1,3 +1,16 @@
+@media screen and ( max-width: 1200px )
+  .footer
+    & .footer-wrap 
+      flex-direction: column 
+      & .block 
+        width: 100%
+        text-align: center
+      & .footer-menu 
+        margin-top: 30px
+      & .footer-back 
+        margin-top: 30px  
+        & .callback 
+          justify-content: center
 @media screen and ( max-width: 1160px )
   .services
     & .services-wrap
@@ -123,6 +136,43 @@
           display: none 
         & .all-lots-text
           margin-left: 0
+  .quotes
+    & .quotes-info
+      flex-direction: column 
+      margin-top: 25px 
+      & .block
+        margin: 50px auto 0 
+        width: 100% 
+    & .quotes-subscription
+      flex-direction: column 
+      & .block 
+        margin: auto
+        width: 100%
+      & .form 
+        margin-top: 20px
+        & form 
+          margin: auto 
+@media screen and ( max-width: 510px )
+  .quotes
+    & .quotes-slider-wrap
+      & .quotes-slider
+        & .slick-list 
+          & .slick-track 
+            & .quotes-slider-block 
+              & .quotes-slider-block-wrap
+                flex-direction: column 
+                & .desc 
+                  margin-left: 0
+                  margin-top: 20px 
+      & .quotes-slider-btn
+        & .left 
+          width: 100%
+          &::before
+            width: 100%
+        & .right 
+          width: 100%
+          &::before
+            width: 100% 
 @media screen and ( max-width: 400px )
   .auction
     & .lots

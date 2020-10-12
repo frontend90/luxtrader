@@ -85,3 +85,12 @@ function time() {
   document.getElementById('time3').innerHTML = timestr;
   window.setTimeout("time()", 1000);
 }
+
+/************    quotes slick      **************/
+$('.quotes-slider').slick({
+  prevArrow: $(''),
+  nextArrow: $('.quotes-slider-btn'),
+  dots: false,
+  autoplay: true,
+  speed: 1500
+});

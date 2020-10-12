@@ -1,0 +1,187 @@
+.quotes
+  padding: 60px 0 75px 0 
+  & .title
+    text-align: center
+    & h3 
+      color: #bb9c66
+      +cerem 
+      font-size: 40px 
+    & h4
+      margin-top: 20px  
+      color: #000000
+      text-transform: uppercase
+      +pf_med 
+      font-size: 35px 
+      letter-spacing: 3.5px 
+  & .quotes-bg
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    margin-top: 20px 
+    & .left 
+      background: url(../img/quotes/1.png) left no-repeat 
+      width: 401px 
+      height: 25px 
+      margin-top: -22px
+    & .middle 
+      background: url(../img/quotes/icon.png) center no-repeat 
+      min-width: 72px 
+      height: 77px 
+    & .right
+      background: url(../img/quotes/2.png) right no-repeat 
+      width: 398px 
+      height: 25px 
+      margin-top: -22px 
+  & .quotes-slider-wrap
+    margin-top: 10px 
+    & .quotes-slider
+      & .slick-list 
+        overflow: hidden
+        & .slick-track 
+          display: flex 
+          & .quotes-slider-block
+            & .quotes-slider-block-wrap
+              display: flex 
+              align-items: center
+              justify-content: center
+              & .desc 
+                margin-left: 65px 
+                & h6 
+                  +pt_ital
+                  font-size: 25px 
+                  color: #000000
+                  line-height: 30px 
+                  margin-bottom: 30px 
+                & p 
+                  line-height: 25px 
+                  color: #1c242a
+    & .quotes-slider-btn
+      display: flex 
+      justify-content: center
+      align-items: center
+      width: 100%
+      & .left 
+        background: url(../img/quotes/3.png) right no-repeat 
+        width: 9px 
+        height: 9px 
+        margin-right: 50px
+        position: relative 
+        display: inline-block
+        &::before
+          content: ''
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          right: 15px
+          height: 1px 
+          width: 100px
+          background: #bb9c66
+      & .right
+        background: url(../img/quotes/3.png) left no-repeat 
+        width: 9px 
+        height: 9px 
+        margin-left: 50px
+        position: relative 
+        display: inline-block
+        &::before
+          content: ''
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          left: 15px
+          height: 1px 
+          width: 100px
+          background: #bb9c66
+  & .quotes-info
+    margin-top: 75px 
+    display: flex 
+    justify-content: space-between
+    & .block 
+      width: calc(50% - 30px)
+      & .title 
+        display: flex 
+        align-items: center
+        & h6 
+          text-transform: uppercase
+          +pf_med 
+          color: #000000
+          font-size: 35px 
+          letter-spacing: 3.5px 
+          margin-left: 10px 
+      & .box
+        margin-top: 35px 
+        & span
+          display: block 
+          font-size: 12px 
+          color: #bb9c66
+        & a 
+          display: inline-block
+          +pt_bold 
+          color: #333333
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            bottom: 2px
+            left: 0
+            width: 100%
+            height: 1px
+            background: #333333
+        & p 
+          margin-top: 5px
+          line-height: 25px 
+  & .quotes-subscription
+    margin-top: 50px 
+    display: flex 
+    align-items: flex-end
+    justify-content: space-between
+    & .block 
+      width: calc(50% - 30px)
+      & .title 
+        text-align: left
+        display: flex 
+        align-items: center
+        & h6 
+          text-transform: uppercase
+          +pf_med 
+          color: #000000
+          font-size: 35px 
+          letter-spacing: 3.5px 
+          margin-left: 15px
+      & p 
+        margin-top: 20px 
+        line-height: 25px 
+    & .form 
+      & form 
+        display: flex 
+        align-items: center
+        justify-content: space-between
+        border: 3px solid #bb9c66
+        max-width: 450px 
+        height: 50px 
+        text-align: right
+        & .input 
+          width: 100%
+          & input
+            width: 100%
+            padding-left: 25px 
+            color: #4f4f4f
+            &::placeholder 
+              color: #4f4f4f
+        & .btn 
+          & button 
+            width: 90px 
+            height: 100%
+            border-left: 1px solid #bb9c66
+            text-transform: uppercase
+            +pf_med 
+            color: #1c242a
+            font-size: 21px 
+            letter-spacing: 2.1px   
+            background: url(../img/quotes/right.png) right no-repeat 
+            background-position: 80% 50%
+            padding-right: 25px 
+
+
+
+

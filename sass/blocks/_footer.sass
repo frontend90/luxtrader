@@ -1,0 +1,59 @@
+.footer
+  background: #1c242a
+  padding: 50px 0
+  & .footer-wrap 
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    & .footer-logo 
+      flex: 0 1 25%
+    & .footer-back 
+      flex: 0 1 25%
+      text-align: right
+    & .block 
+      & p 
+        margin-top: 20px 
+        font-size: 14px 
+        color: #bb9c66
+        white-space: nowrap
+      & a 
+        text-transform: uppercase
+        display: inline-block
+        color: #ffffff
+        +pf_med 
+        font-size: 14px 
+        letter-spacing: 1.4px 
+        line-height: 25px 
+        margin-left: 10px
+        &:hover
+          text-decoration: underline
+      & .number 
+        & a 
+          display: inline-flex 
+          justify-content: flex-end
+          align-items: flex-start
+          color: #bb9c66
+          +bravo 
+          line-height: 25px 
+          margin-left: 0
+          &:hover
+            text-decoration: none 
+          & .small
+            font-size: 25px 
+            line-height: 5px
+          & .big 
+            font-size: 50px  
+            padding-left: 
+      & .callback 
+        margin-top: 20px 
+        display: flex 
+        align-items: center
+        justify-content: flex-end
+        & a 
+          display: inline-block
+          text-transform: none 
+          color: #bb9c66
+          +pt_reg 
+          letter-spacing: normal
+          margin-left: 5px 
+
